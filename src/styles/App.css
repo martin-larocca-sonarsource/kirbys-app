@@ -1,0 +1,33 @@
+.app {
+  min-height: 100vh;
+  background-color: #fefcf8;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #f4f1eb 0%, #e8ddd4 100%);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #d4c4a8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.app-title {
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  color: #8b4513;
+  font-weight: 600;
+}
+
+.app-subtitle {
+  font-size: 1.125rem;
+  color: #8b7355;
+  font-style: italic;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}

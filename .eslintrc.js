@@ -1,0 +1,33 @@
+module.exports = {
+  root: true,
+  env: { browser: true, es2020: true },
+  extends: [
+    'eslint:recommended',
+    '@typescript-eslint/recommended',
+    'plugin:sonarjs/recommended',
+    'plugin:security/recommended',
+  ],
+  ignorePatterns: ['dist', '.eslintrc.js'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['react-refresh', 'sonarjs', 'security'],
+  rules: {
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
+    'sonarjs/cognitive-complexity': ['error', 15],
+    'sonarjs/no-duplicate-string': ['error', { threshold: 3 }],
+    'sonarjs/no-identical-functions': 'error',
+    'sonarjs/no-redundant-boolean': 'error',
+    'sonarjs/no-unused-collection': 'error',
+    'sonarjs/no-useless-catch': 'error',
+    'sonarjs/prefer-immediate-return': 'error',
+    'sonarjs/prefer-single-boolean-return': 'error',
+    'security/detect-object-injection': 'error',
+    'security/detect-non-literal-regexp': 'error',
+    'security/detect-unsafe-regex': 'error',
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/explicit-function-return-type': 'warn',
+    '@typescript-eslint/no-explicit-any': 'warn',
+  },
+}
