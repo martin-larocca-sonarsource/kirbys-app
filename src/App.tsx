@@ -141,7 +141,7 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <header className="app-header">
-        <h1 className="app-title">Heartlines</h1>
+        <h1 className="app-title">Kirby's Budget App</h1>
         <p className="app-subtitle">Your Personal Budget Companion</p>
       </header>
       

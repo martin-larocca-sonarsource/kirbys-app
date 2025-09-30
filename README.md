@@ -1,4 +1,4 @@
-# Heartlines - Personal Budget App
+# Kirby's Budget App
 
 A personal budgeting application built with React + TypeScript for learning SonarQube code quality analysis. The app helps users track income, expenses, and provides budget recommendations based on financial best practices.
 

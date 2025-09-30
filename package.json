@@ -1,7 +1,7 @@
 {
-  "name": "heartlines-budget-app",
+  "name": "kirbys-budget-app",
   "version": "1.0.0",
-  "description": "Personal budgeting application built with React + TypeScript for learning SonarQube code quality analysis",
+  "description": "Kirby's Budget App - Personal budgeting application built with React + TypeScript for learning SonarQube code quality analysis",
   "type": "module",
   "scripts": {
     "dev": "vite",
