@@ -12,7 +12,11 @@ interface CategoryBreakdownChartProps {
   data: CategoryData[];
 }
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8', '#82CA9D', '#FFC658', '#FF7C7C', '#8DD1E1', '#D084D0', '#87D068'];
+const COLORS = [
+  '#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', 
+  '#ff9ff3', '#54a0ff', '#5f27cd', '#00d2d3', '#ff9f43',
+  '#10ac84', '#ee5a24', '#0abde3', '#c44569', '#f8b500'
+];
 
 const CategoryBreakdownChart: React.FC<CategoryBreakdownChartProps> = ({ data }) => {
   const formatCurrency = (value: number): string => {
@@ -52,9 +56,12 @@ const CategoryBreakdownChart: React.FC<CategoryBreakdownChartProps> = ({ data })
             cy="50%"
             labelLine={false}
             label={({ category, percentage }) => `${category}: ${percentage.toFixed(1)}%`}
-            outerRadius={80}
+            outerRadius={90}
+            innerRadius={30}
             fill="#8884d8"
             dataKey="amount"
+            animationBegin={0}
+            animationDuration={1500}
           >
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />

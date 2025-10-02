@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "mglr",
+        "projectKey": "martin-larocca-sonarsource_kirbys-app"
+    }
+}
